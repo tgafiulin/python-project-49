@@ -10,5 +10,10 @@ package-install:
 install:
 	poetry install
 
-breain-games:
+brain-games:
 	poetry run brain-games
+
+all:
+	poetry build
+	poetry publish --dry-run
+	python -m pip install dist/*.whl
