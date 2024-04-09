@@ -16,8 +16,7 @@ def startGame(getRoundData, question):
         if rightAnswer == userAnswer:
             print('Correct!')
         else:
-            print(f'''{userAnswer} is wrong answer ;(.
-                Correct answer was {rightAnswer}.''')
+            print(f'{userAnswer} is wrong answer ;(. Correct answer was {rightAnswer}.')
             print(f'Let\'s try again, {name}!')
             return
         i += 1

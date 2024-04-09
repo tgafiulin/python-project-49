@@ -17,6 +17,7 @@ brain-even:
 	poetry run brain-even
 
 all:
+	poetry install
 	poetry build
 	poetry publish --dry-run
 	python -m pip install dist/*.whl
