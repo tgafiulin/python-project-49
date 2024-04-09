@@ -19,11 +19,11 @@ def getRoundData():
     return (rightAnswer, question)
 
 
-def getGcd (a, b):
-  if not b:
-    return a
+def getGcd(a, b):
+    if not b:
+        return a
 
-  return getGcd(b, a % b)
+    return getGcd(b, a % b)
 
 
 if __name__ == '__main__':

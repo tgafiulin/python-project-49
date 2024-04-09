@@ -11,23 +11,23 @@ def main():
 
 
 def getRoundData():
-    randomFirstNumber = random.randint(0, 99)
-    randomSecondNumber = random.randint(0, 99)
+    randFirstNumber = random.randint(0, 99)
+    randSecondNumber = random.randint(0, 99)
     operations = ('+', '-', '*')
-    randomOperation = operations[random.randint(0, len(operations) - 1)]
+    operation = operations[random.randint(0, len(operations) - 1)]
 
-    question = f'{randomFirstNumber} {randomOperation} {randomSecondNumber}'
-    rightAnswer = str(calculation(randomFirstNumber, randomOperation, randomSecondNumber))
+    question = f'{randFirstNumber} {operation} {randSecondNumber}'
+    rightAnswer = str(calculation(randFirstNumber, operation, randSecondNumber))
     return (rightAnswer, question)
 
 
-def calculation (firstNumber, operation, secondNumber):
-  if operation == '+':
-    return firstNumber + secondNumber
-  if operation == '-':
-    return firstNumber - secondNumber
-  if operation == '*':
-    return firstNumber * secondNumber
+def calculation(firstNumber, operation, secondNumber):
+    if operation == '+':
+        return firstNumber + secondNumber
+    if operation == '-':
+        return firstNumber - secondNumber
+    if operation == '*':
+        return firstNumber * secondNumber
 
 
 if __name__ == '__main__':

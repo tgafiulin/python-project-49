@@ -19,14 +19,13 @@ def getRoundData():
     return (rightAnswer, question)
 
 
-def checkPrimeNumber (number):
+def checkPrimeNumber(number):
     if number == 1:
         return False
     elif number > 1:
         for i in range(2, int(math.sqrt(number)) + 1):
             if number % i == 0:
                 return False
-            
     return True
 
 

@@ -16,7 +16,8 @@ def getRoundData():
     lengthProgression = random.randint(5, 10)
     indexAnswer = random.randint(0, lengthProgression - 1)
 
-    row = generateProgression(firstNumberProgression, stepProgression, lengthProgression)
+    params = firstNumberProgression, stepProgression, lengthProgression
+    row = generateProgression(params)
     rightAnswer = str(row[indexAnswer])
     row[indexAnswer] = '..'
 
@@ -25,7 +26,8 @@ def getRoundData():
     return (rightAnswer, question)
 
 
-def generateProgression (firstNumberProgression, stepProgression, lengthProgression):
+def generateProgression(params):
+    firstNumberProgression, stepProgression, lengthProgression = params
     row = []
 
     for i in range(lengthProgression):
