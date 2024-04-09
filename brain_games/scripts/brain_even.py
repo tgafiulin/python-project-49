@@ -2,12 +2,12 @@
 
 import random
 
-from brain_games import startGame
+from brain_games.startGame import startGame
 
 
 def main():
     question = 'Answer "yes" if the number is even, otherwise answer "no".'
-    startGame.startGame(getRoundData, question)
+    startGame(getRoundData, question)
 
 
 def getRoundData():
